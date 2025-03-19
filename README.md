@@ -1,57 +1,32 @@
-🩸 Blood Donation Platform
-This project is a simple Blood Donation Platform where users can register as donors or receivers and view a list of available donors.
+# Research Paper Fetching and Analysis Tool
 
-📌 Features
-Register as a blood donor with name, blood type, location, and contact details.
-Register as a blood receiver with similar details.
-View a list of available donors.
-🚀 Setup Instructions
-Option 1: Basic HTML + Materialize CSS (No React Required)
-🔧 Requirements
-A web browser (Chrome, Firefox, Edge)
-📥 Installation
-Download or clone this repository:
-sh
-Copy
-Edit
-git clone https://github.com/your-username/blood-donation-platform.git
-cd blood-donation-platform
-Open the index.html file in your browser.
-Done! 🎉
-Option 2: React + Material UI (Modern UI with React)
-🔧 Requirements
-Node.js (Download from nodejs.org)
-npm (Comes with Node.js)
-📥 Installation & Setup
-Clone the repository:
-sh
-Copy
-Edit
-git clone https://github.com/your-username/blood-donation-platform.git
-cd blood-donation-platform
-Install dependencies:
-sh
-Copy
-Edit
-npm install
-Run the project:
-sh
-Copy
-Edit
-npm start
-Open http://localhost:3000 in your browser. 🎉
-🛠 API Integration (For Future Backend)
-If you plan to use a backend, you can create an API for handling donors and receivers. Example:
+## Overview
+This project fetches research papers based on a user's query using the **Semantic Scholar API**, extracts key details (submission, revision, acceptance, and publication dates), calculates **publication speed probability**, and visualizes insights using **Plotly**. Additionally, it saves the abstracts of research papers and generates **summaries** using the **LLaMA model via Groq API**.
 
-GET /api/donors → Get all donors
-POST /api/donors/add → Register a new donor
-🖥 Tech Stack
-Basic HTML Version
-HTML, CSS
-Materialize CSS
-React Version
-React.js
-Material UI
-Fetch API (for connecting to a backend)
-🤝 Contributing
-Feel free to contribute! Fork the repo and submit a pull request. 🚀
+## Features
+- Fetches research papers using **Semantic Scholar API**.
+- Extracts **submission, revision, acceptance, and publication** dates.
+- Calculates **publication speed probability**.
+- Generates **summaries** of abstracts using **LLaMA (Groq API)**.
+- Visualizes insights with **Plotly**.
+- Displays summarized research paper details on a **web interface**.
+
+## Tech Stack
+- **Backend**: Python (Flask)
+- **Frontend**: HTML, CSS, JavaScript
+- **APIs**: 
+  - **Semantic Scholar API** (fetching research papers)
+  - **Groq API (LLaMA)** (summarizing abstracts)
+- **Visualization**: Plotly
+
+## Installation & Setup
+### Prerequisites
+- Python 3.x installed
+- `pip` package manager
+- Node.js (for frontend dependencies)
+
+### Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/research-paper-tool.git
+   cd research-paper-tool
