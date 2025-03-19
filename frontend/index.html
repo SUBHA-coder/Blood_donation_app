@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation Platform</title>
+    
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="container">
+
+    <h3 class="center-align red-text text-darken-2">Blood Donation Platform</h3>
+
+    <!-- Donor Registration Form -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Register as a Donor</span>
+            <div class="input-field">
+                <input type="text" id="donorName">
+                <label for="donorName">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="donorBloodType">
+                <label for="donorBloodType">Blood Type</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="donorLocation">
+                <label for="donorLocation">Location</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="donorContact">
+                <label for="donorContact">Contact</label>
+            </div>
+            <button class="btn red darken-2" onclick="registerDonor()">Register</button>
+        </div>
+    </div>
+
+    <!-- Receiver Registration Form -->
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">Register as a Receiver</span>
+            <div class="input-field">
+                <input type="text" id="receiverName">
+                <label for="receiverName">Name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="receiverBloodType">
+                <label for="receiverBloodType">Blood Type</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="receiverLocation">
+                <label for="receiverLocation">Location</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="receiverContact">
+                <label for="receiverContact">Contact</label>
+            </div>
+            <button class="btn red darken-2" onclick="registerReceiver()">Register</button>
+        </div>
+    </div>
+
+    <!-- Available Donors List -->
+    <h4 class="red-text text-darken-2">Available Donors</h4>
+    <ul id="donorList" class="collection"></ul>
+
+    <script src="script.js"></script>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
